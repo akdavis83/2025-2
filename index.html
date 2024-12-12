@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>とだけで実装する</title>
+  <link rel="icon" href="https://fav.farm/🌀" />
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Croissant+One&family=Dela+Gothic+One&family=Flamenco:wght@300;400&family=Goldman:wght@400;700&family=Nova+Square&family=Orbitron:wght@400..900&family=Prociono&family=Protest+Revolution&family=Redressed&family=Righteous&family=Unlock&family=Yatra+One&display=swap" rel="stylesheet">
+<style>
+  .redressed-regular {
+  font-family: "Redressed", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #6ecdef;
+  --hover: #6e79ef;
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+body {
+  color: #421fab;
+  background: #ffffff;
+  font: 300 1em "Fira Sans", sans-serif;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+</style>
+</head>
+<body>  
+  <!-- partial -->
+<div class="containe">
+  <div class="update_box active">
+      <div class="loading">
+          <span class="loader"></span>
+          <h2>Welcome To My Website...</h2>
+      </div>
+      <div class="profile_box">
+          <span class="tick"></span>
+          <h2>Access Granted! 
+              <span class="close_icon"></span>
+          </h2>
+      </div>
+  </div>
+
+</div>
+  <div style="position: absolute; top: 75px;">
+    <h1 class="redressed-regular" style="color: #0c90e2;">
+      What do you want to accomplish in the New Year???
+    </h1>
+    <h1 class="redressed-regular" style="color: #0c90e2;">
+      Accomplish your New Year goals with the i3 Network!
+    </h1>
+    
+  </div>
+<a href="https://i3network.netlify.app/"><button class="pulse" style="z-index: 1; position: absolute; top: 20px;">
+  i3 Network
+</button></a>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="macbook">
+    <div class="macbook__topBord">
+      <div class="macbook__display">Welcome!
+        <div class="macbook__load"></div>
+      </div>
+    </div>
+    <div class="macbook__underBord">
+      <div class="macbook__keybord">
+        <div class="keybord">
+          <div class="keybord__touchbar"></div>
+          <ul class="keybord__keyBox">
+            <li class="keybord__key key--01"></li>
+            <li class="keybord__key key--02"></li>
+            <li class="keybord__key key--03"></li>
+            <li class="keybord__key key--04"></li>
+            <li class="keybord__key key--05"></li>
+            <li class="keybord__key key--06"></li>
+            <li class="keybord__key key--07"></li>
+            <li class="keybord__key key--08"></li>
+            <li class="keybord__key key--09"></li>
+            <li class="keybord__key key--10"></li>
+            <li class="keybord__key key--11"></li>
+            <li class="keybord__key key--12"></li>
+            <li class="keybord__key key--13"></li>
+          </ul>
+          <ul class="keybord__keyBox--under">
+            <li class="keybord__key key--14"></li>
+            <li class="keybord__key key--15"></li>
+            <li class="keybord__key key--16"></li>
+            <li class="keybord__key key--17"></li>
+            <li class="keybord__key key--18"></li>
+            <li class="keybord__key key--19"></li>
+            <li class="keybord__key key--20"></li>
+            <li class="keybord__key key--21"></li>
+            <li class="keybord__key key--22"></li>
+            <li class="keybord__key key--23"></li>
+            <li class="keybord__key key--24"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- partial:index.partial.html -->
+
+  <svg id="ny2025" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 222">
+  <defs>
+  <style>
+  #digits {
+  width: auto;
+  fill: none;
+  stroke-width: 1;
+  display: block;
+  stroke: #0c90e2;
+  stroke-dasharray:350px;
+    stroke-dashoffset:350px;
+  -webkit-animation:8s Yr linear infinite;
+          animation:8s Yr linear infinite;
+  stroke-linecap:round;
+  
+}
+@-webkit-keyframes Yr {
+  0% {
+        stroke-dashoffset:350px;
+  }
+  20%,80% {
+      stroke-dashoffset:0
+  }
+  100% {
+     stroke-dashoffset:-350px;
+  }
+}
+@keyframes Yr {
+  0% {
+        stroke-dashoffset:350px;
+  }
+  20%,80% {
+      stroke-dashoffset:0
+  }
+  100% {
+     stroke-dashoffset:-350px;
+  }
+}
+  
+  </style>
+  </defs>
+  <path id="digits" d="M65.3 168.7v45.5H53.7c-9.3-12.9-15.6-21.1-18.8-24.6-3.3-3.5-6.3-5.3-9.1-5.3-1.9 0-3.4.8-4.5 2.3-1.1 1.5-1.6 3.4-1.6 5.7 0 5.8 2.1 11 6.4 15.5l-9.9 8.3c-3.3-3-5.7-6.5-7.3-10.7-1.6-4.2-2.4-8.4-2.4-12.8 0-6.9 1.8-12.6 5.3-16.9 3.5-4.4 8.2-6.6 14-6.6 4.4 0 8.6 1.6 12.7 4.9 4.1 3.3 8.7 8.6 13.8 15.9v-21.2h13zM63.8 127c1.7 3.2 2.5 6.9 2.5 11s-.8 7.8-2.5 11-3.9 5.8-6.8 7.8c-2.8 2-6 3.5-9.5 4.5s-7.2 1.5-11.2 1.5c-5.3 0-10.2-.9-14.6-2.6-4.4-1.7-8.1-4.5-11-8.4-2.9-3.9-4.4-8.5-4.4-13.9s1.5-10 4.4-13.9c2.9-3.9 6.6-6.7 11-8.4 4.4-1.7 9.3-2.6 14.6-2.6 3.9 0 7.7.5 11.2 1.5s6.7 2.5 9.5 4.5c2.9 2.2 5.2 4.8 6.8 8zm-10.7 11.1c0-6.5-5.6-9.8-16.8-9.8-11.1 0-16.7 3.3-16.7 9.8 0 6.5 5.6 9.8 16.7 9.8 11.2-.1 16.8-3.3 16.8-9.8zm12.2-76.6V107H53.7c-9.3-12.8-15.6-21-18.8-24.5-3.3-3.5-6.3-5.3-9.1-5.3-1.9 0-3.4.8-4.5 2.3-1.1 1.5-1.6 3.4-1.6 5.7 0 5.8 2.1 11 6.4 15.5L16 109c-3.3-3-5.7-6.5-7.3-10.7-1.6-4.2-2.4-8.4-2.4-12.8 0-6.9 1.8-12.6 5.3-16.9 3.5-4.4 8.2-6.6 14-6.6 4.4 0 8.6 1.6 12.7 4.9 4.1 3.3 8.7 8.6 13.8 15.9V61.5h13.2zm1.1-30.4c0 9.9-2.8 17.7-8.4 23.4l-10.4-8.2c3.8-4.1 5.7-9.1 5.7-15.1 0-3-.6-5.4-1.9-7-1.3-1.7-2.9-2.5-4.8-2.5-2 0-3.7.8-4.9 2.4-1.2 1.6-1.8 3.8-1.8 6.7 0 4.6 1.5 8.4 4.4 11.5l-2.5 10.4H7.2V10.6h13.1v27.2h11.2c-3.1-3.2-4.6-7.3-4.6-12.5 0-5.1 1.7-9.5 5.2-13.2 3.5-3.7 8-5.5 13.7-5.5 6.3 0 11.3 2.2 15 6.6 3.7 4.4 5.6 10.4 5.6 17.9z"/></svg>
+<!-- partial -->
+
+
+<script src="./script.js"></script>
+<script>
+  class RadioButtonEffect {
+    constructor(radioBtnGroups) {
+      this.previousRadioBtn = null;
+  
+      radioBtnGroups.forEach((group) => {
+        const radioBtn = gsap.utils.selector(group)("input[type='radio']")[0];
+        const nodes = this.getNodes(radioBtn);
+  
+        radioBtn.addEventListener("change", () => {
+          if (this.previousRadioBtn && this.previousRadioBtn !== radioBtn) {
+            this.changeEffect(this.getNodes(this.previousRadioBtn), false);
+          }
+  
+          this.changeEffect(nodes, true);
+          this.previousRadioBtn = radioBtn;
+        });
+      });
+    }
+  
+    getNodes(radioBtn) {
+      const container = radioBtn.closest(".radio-btn-group");
+      return gsap.utils.shuffle(gsap.utils.selector(container)("rect"));
+    }
+  
+    changeEffect(nodes, isChecked) {
+      gsap.to(nodes, {
+        duration: 0.8,
+        ease: "elastic.out(1, 0.3)",
+        x: isChecked ? "100%" : "-100%",
+        stagger: 0.01,
+        overwrite: true
+      });
+  
+      gsap.fromTo(
+        nodes,
+        {
+          fill: "#0c79f7"
+        },
+        {
+          fill: "#76b3fa",
+          duration: 0.1,
+          ease: "elastic.out(1, 0.3)",
+          repeat: -1
+        }
+      );
+  
+      if (isChecked) {
+        const randomNodes = nodes.slice(0, 5);
+        gsap.to(randomNodes, {
+          duration: 0.7,
+          ease: "elastic.out(1, 0.1)",
+          x: "100%",
+          stagger: 0.1,
+          repeatDelay: 1.5,
+          repeat: -1
+        });
+      }
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const radioBtnGroups = document.querySelectorAll(".radio-btn-group");
+    new RadioButtonEffect(radioBtnGroups);
+  });
+</script>
+</body>
+</html>
